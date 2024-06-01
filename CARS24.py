@@ -3,7 +3,8 @@ import streamlit as st
 import pickle
 
 # Load the dataset
-cars_df = pd.read_excel(r"cars24-car-price.xlsx")
+cars_df = pd.read_excel(r"CARS24_Car-Price-Prediction-App/cars24-car-price.xlsx")
+
 
 # Page configuration
 st.set_page_config(
