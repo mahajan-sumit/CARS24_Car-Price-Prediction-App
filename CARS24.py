@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import openpyxl
 
 # Load the dataset
 cars_df = pd.read_excel(r"cars24-car-price.xlsx")
