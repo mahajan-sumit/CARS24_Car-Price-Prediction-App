@@ -43,7 +43,7 @@ encode_dict = {
 # Function to load the model and make predictions
 def model_pred(fuel_type, transmission_type, engine, seats, seller_type):
     # Load the model
-    with open(r"C:\Users\Admin\OneDrive\Documents\GitHub\MLOps\sumit\model.pkl", 'rb') as file:
+    with open(r"model.pkl", 'rb') as file:
         reg_model = pickle.load(file)
 
     # Encode categorical features
