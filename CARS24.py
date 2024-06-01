@@ -3,12 +3,11 @@ import streamlit as st
 import pickle
 
 # Load the dataset
-cars_df = pd.read_excel(r"CARS24_Car-Price-Prediction-App/cars24-car-price.xlsx")
-
+cars_df = pd.read_excel(r"C:\Users\Admin\OneDrive\Documents\GitHub\MLOps\sumit\cars24-car-price.xlsx")
 
 # Page configuration
 st.set_page_config(
-    page_title="Cars24: Car Price Prediction",
+    page_title="CARS24: Car Price Prediction App",
     page_icon="🚗",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -44,7 +43,7 @@ encode_dict = {
 # Function to load the model and make predictions
 def model_pred(fuel_type, transmission_type, engine, seats, seller_type):
     # Load the model
-    with open(r"model.pkl", 'rb') as file:
+    with open(r"C:\Users\Admin\OneDrive\Documents\GitHub\MLOps\sumit\model.pkl", 'rb') as file:
         reg_model = pickle.load(file)
 
     # Encode categorical features
