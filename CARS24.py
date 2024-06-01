@@ -3,7 +3,7 @@ import streamlit as st
 import pickle
 
 # Load the dataset
-cars_df = pd.read_excel(r"C:\Users\Admin\OneDrive\Documents\GitHub\MLOps\sumit\cars24-car-price.xlsx")
+cars_df = pd.read_excel(r"cars24-car-price.xlsx")
 
 # Page configuration
 st.set_page_config(
